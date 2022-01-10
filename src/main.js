@@ -20,5 +20,8 @@ router.on({
     "/product": () => {
         print(ProductPage.render());
     },
+    "/contact": () => {
+        print(ContactPage.render());
+    },
 });
 router.resolve();
