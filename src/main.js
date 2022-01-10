@@ -2,6 +2,7 @@ import Navigo from "navigo";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ProductPage from "./pages/product";
+import ContactPage from "./pages/contact";
 
 
 const router = new Navigo("/", { linksSelector: "a" });

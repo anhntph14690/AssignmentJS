@@ -3,7 +3,7 @@ import NewsList from "../components/newsList";
 
 const HomePage = {
     render() {
-        return /* html */`
+        return /*html*/`
             <div class="banner">
                 ${Banner.render()}
             </div>
