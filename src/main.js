@@ -1,6 +1,8 @@
 import Navigo from "navigo";
-import AboutPage from "./pages/about";
 import HomePage from "./pages/home";
+import AboutPage from "./pages/about";
+import ProductPage from "./pages/product";
+
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -16,7 +18,7 @@ router.on({
         print(AboutPage.render());
     },
     "/product": () => {
-
+        print(ProductPage.render());
     },
 });
 router.resolve();
