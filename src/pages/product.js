@@ -1,4 +1,3 @@
-
 const ProductPage = {
     render() {
         return /*html*/`
