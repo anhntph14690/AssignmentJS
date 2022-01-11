@@ -13,7 +13,7 @@ const Header = {
               </ul>
               <div class="py-3 flex ml-80">
                 <input class="w-60" type="text">
-                <button class="bg-[#272f54] text-stone-50 text-sm w-20 ml-2 border">TÌM KIẾM</button> 
+                <button class="bg-[#272f54] text-stone-50 text-sm w-20 ml-2 border">Search</button> 
               </div>
             </div>
         `;
