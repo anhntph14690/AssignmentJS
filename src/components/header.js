@@ -8,7 +8,7 @@ const Header = {
               <ul class="w-100 flex">
                 <li><a href="/" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Home</a></li>
                 <li><a href="/about" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">About</a></li>
-                <li><a href="/product" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Product</a></li>
+                <li><a href="/news" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">New</a></li>
                 <li><a href="/contact" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Contact</a></li>
               </ul>
               <div class="py-3 flex ml-80">

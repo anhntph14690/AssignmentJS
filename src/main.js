@@ -2,10 +2,9 @@ import Navigo from "navigo";
 import Header from "./components/header";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
-import ProductPage from "./pages/product";
 import ContactPage from "./pages/contact";
 import DetailNewsPage from "./pages/detailNews";
-import NewsPage from "./pages/new";
+import NewsPage from "./pages/news";
 
 
 
@@ -22,9 +21,6 @@ router.on({
     },
     "/about": () => {
         print(AboutPage.render());
-    },
-    "/product": () => {
-        print(ProductPage.render());
     },
     "/contact": () => {
         print(ContactPage.render());
