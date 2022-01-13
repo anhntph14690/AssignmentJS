@@ -7,14 +7,10 @@ const Header = {
             <div class="bg-[#cb7802] flex">
               <ul class="w-100 flex">
                 <li><a href="/" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Home</a></li>
-                <li><a href="/about" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">About</a></li>
-                <li><a href="/news" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">New</a></li>
-                <li><a href="/contact" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Contact</a></li>
+                <li><a href="/admin" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Admin</a></li>
+                <li><a href="/signup" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signup</a></li>
+                <li><a href="/signin" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signin</a></li>
               </ul>
-              <div class="py-3 flex ml-80">
-                <input class="w-60" type="text">
-                <button class="bg-[#272f54] text-stone-50 text-sm w-20 ml-2 border">Search</button> 
-              </div>
             </div>
         `;
     },
