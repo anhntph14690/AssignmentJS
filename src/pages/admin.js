@@ -11,6 +11,7 @@ const AdminPage = {
                     <p>News</p>
                 </a>
             </div>
+
         `;
     },
 };
