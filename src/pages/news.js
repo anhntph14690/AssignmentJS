@@ -4,10 +4,9 @@ import data from "../data";
 const NewsPage = {
     render() {
         return /*html*/ `
-            <h1>News Page 1</h1>
-            <div class="mr-4 text-right mr-4 ">
-                <a href="/admin/news/add" class="bg-[#272f54] text-zinc-50 max-w-screen-sm">Add</a>
-                
+            <div class="mr-6 mt-4 text-right mr-4 ">
+                <a href="/admin/news/add" class="text-amber-600 hover:text-orange-800">Add</a>
+
             </div>
             <!-------------------------->
             ${data.map((post) => `
