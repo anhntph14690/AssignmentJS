@@ -48,8 +48,9 @@ router.on({
     "/admin/news/add": () => {
         print(Add.render());
     },
-    "/admin/news/edit": () => {
-        print(Edit.render());
+    "/admin/news/:id/edit": ({ data }) => {
+        const { id } = data;
+        print(Edit.render(id));
     },
     
 });
