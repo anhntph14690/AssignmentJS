@@ -18,7 +18,7 @@ import Edit from "./pages/edit";
 const router = new Navigo("/", { linksSelector: "a" });
 
 const print = (content) => {
-    document.getElementById("header").innerHTML = Header.render;
+    document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
 };
 
@@ -45,10 +45,10 @@ router.on({
         const { id } = data;
         print(DetailNewsPage.render(id));
     },
-    "/add": () => {
+    "/admin/news/add": () => {
         print(Add.render());
     },
-    "/edit": () => {
+    "/admin/news/edit": () => {
         print(Edit.render());
     },
     

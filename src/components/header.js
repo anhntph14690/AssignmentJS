@@ -11,7 +11,12 @@ const Header = {
                 <li><a href="/signup" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signup</a></li>
                 <li><a href="/signin" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signin</a></li>
               </ul>
+              <div class="py-3 flex ml-80">
+                <input class="w-60" type="text">
+                <button class="bg-[#272f54] text-stone-50 text-sm w-20 ml-2 border">Search</button> 
+              </div>
             </div>
+            
         `;
     },
 };

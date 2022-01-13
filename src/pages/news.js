@@ -5,7 +5,7 @@ const NewsPage = {
         return /*html*/ `
             <h1>News Page 1</h1>
             <div class="mr-4 text-right mr-4 ">
-                <a href="/add" class="bg-[#272f54] text-zinc-50 max-w-screen-sm">Add</a>
+                <a href="/admin/news/add" class="bg-[#272f54] text-zinc-50 max-w-screen-sm">Add</a>
                 
             </div>
             ${NewsList.render()}
