@@ -54,6 +54,6 @@ router.on({
         const { id } = data;
         print(Edit.render(id));
     },
-    
+
 });
 router.resolve();

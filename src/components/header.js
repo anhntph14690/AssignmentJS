@@ -1,6 +1,6 @@
 const Header = {
-    render() {
-        return /*html*/ `
+  render() {
+    return /*html*/ `
            
             <div class="bg-[#272f54] py-4">
               <a href="#"><img class="m-auto" src="https://picsum.photos/250/75" alt=""></a>
@@ -31,6 +31,6 @@ const Header = {
             </div>
             
         `;
-    },
+  },
 };
 export default Header;
