@@ -1,13 +1,16 @@
 import data from "./../../data";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 
 const Edit = {
     render(id) {
         const result = data.find((post) => post.id == id);
         return /*html*/`
+            <div>
+                ${Header.render()}
+            </div>
             <h1 class="text-2xl my-10 font-bold">Edit</h1>
-
-
 
             <div class="hidden sm:block" aria-hidden="true">
                 <div class="py-5">
@@ -86,7 +89,9 @@ const Edit = {
                 </div>
             </div>
 
-
+            <div>
+                ${Footer.render()}
+            </div>
 
 
         `;

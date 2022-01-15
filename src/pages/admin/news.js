@@ -1,9 +1,13 @@
 import data from "./../../data";
-
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 const NewsPage = {
     render() {
         return /*html*/ `
+            <div>
+                ${Header.render()}
+            </div>
             <div class="mr-6 mt-4 text-right mr-4 ">
                 <a href="/admin/news/add" class="text-amber-600 hover:text-orange-800">Add</a>
 
@@ -75,8 +79,10 @@ const NewsPage = {
                 </div>
             `).join("")}
 
-
-            <!-------------------------->
+            <div>
+                ${Footer.render()}
+            </div>
+            
         `;
     },
 };

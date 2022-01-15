@@ -19,9 +19,9 @@ import Edit from "./pages/admin/edit";
 const router = new Navigo("/", { linksSelector: "a" });
 
 const print = (content) => {
-    document.getElementById("header").innerHTML = Header.render();
+    // document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
-    document.getElementById("footer").innerHTML = Footer.render();
+    // document.getElementById("footer").innerHTML = Footer.render();
 };
 
 router.on({

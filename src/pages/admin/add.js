@@ -1,9 +1,14 @@
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+
+
 const Add = {
     render() {
         return /*html*/`
+            <div>
+                ${Header.render()}
+            </div>
             <h1 class="text-2xl my-10 font-bold">Add</h1>
-            
-
             
                 <div class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
@@ -93,7 +98,9 @@ const Add = {
                     </div>
                 </div>
             
-
+            <div>
+                ${Footer.render()}
+            </div>
 
         `;
     },
