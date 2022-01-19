@@ -5,9 +5,8 @@ const DetailNewsPage = {
         return fetch(`https://61e7b3a8e32cd90017acbca5.mockapi.io/anhntph14690/${id}`)
             .then((response) => response.json())
             .then((data) => `
-                <h1>${data.title}</h1>
-                <img src="${data.img}" />    
-                <p>${data.desc}</p>
+                <h1>${data.name}</h1>
+                <img src="${data.avatar}" />
             `);
 
         // const result = data.find((post) => post.id === id);
