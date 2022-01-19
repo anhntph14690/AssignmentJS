@@ -6,19 +6,21 @@ import Footer from "../components/footer";
 
 
 const HomePage = {
-    render() {
+    async render() {
         return /*html*/`
             <div>
-                ${Header.render()}
-            </div>
-            <div>
-                ${Banner.render()}
-            </div>
-            <div>
-                ${NewsList.render()}
-            </div>
-            <div>
-                ${Footer.render()}
+                <div>
+                    ${Header.render()}
+                </div>
+                <div>
+                    ${Banner.render()}
+                </div>
+                <div>
+                    ${await NewsList.render()}
+                </div>
+                <div>
+                    ${Footer.render()}
+                </div>
             </div>
         `;
     },

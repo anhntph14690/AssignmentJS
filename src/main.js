@@ -1,6 +1,4 @@
 import Navigo from "navigo";
-import Header from "./components/header";
-import Footer from "./components/footer";
 import HomePage from "./pages/home";
 import AdminPage from "./pages/admin/admin";
 import Signup from "./pages/signup";

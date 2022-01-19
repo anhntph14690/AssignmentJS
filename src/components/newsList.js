@@ -2,7 +2,9 @@ import data from "../data";
 
 const NewsList = {
     render() {
-        return /*html*/`
+        return fetch("https://61e7b3a8e32cd90017acbca5.mockapi.io/anhntph14690")
+        .then((response) => response.json())
+        .then((data) =>/*html*/`
             <h2 class="font-semibold text-2xl uppercase text-blue-800 my-4">Tin tức học tập</h2>
             <div class="grid grid-cols-3 gap-8">
                 ${data.map((post) => `
@@ -16,7 +18,7 @@ const NewsList = {
                 `).join("")}
                     
             </div>
-        `;
+        `);
     },
 };
 export default NewsList;
