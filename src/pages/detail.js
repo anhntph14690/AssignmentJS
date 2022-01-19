@@ -2,7 +2,7 @@
 
 const DetailNewsPage = {
     render(id) {
-        return fetch(`https://5e79b4b817314d00161333da.mockapi.io/posts/${id}`)
+        return fetch(`https://61e7b3a8e32cd90017acbca5.mockapi.io/anhntph14690/${id}`)
             .then((response) => response.json())
             .then((data) => `
                 <h1>${data.title}</h1>

@@ -2,9 +2,9 @@
 
 const NewsList = {
     render() {
-        return fetch("https://5e79b4b817314d00161333da.mockapi.io/posts")
+        return fetch("https://61e7b3a8e32cd90017acbca5.mockapi.io/anhntph14690")
             .then((response) => response.json())
-            .then((data) =>/* html */`
+            .then((data) =>/*html*/`
                 <h2 class="font-semibold text-2xl uppercase text-blue-800 my-4">Tin tức học tập</h2>
                 <div class="grid grid-cols-3 gap-8">
                     ${data.map((post) => `
