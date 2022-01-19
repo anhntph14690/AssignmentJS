@@ -1,10 +1,10 @@
 const Footer = {
     render() {
-        return /*html*/`
-            <footer class="bg-[#272f54] h-14 mt-6">
-                <p class="text-stone-50 py-3 text-center">NGUYỄN THẾ ANH</p>
-            </footer>
-        `
-    }
-}
+        return `
+        <footer class="bg-blue-800 text-center py-4 mt-4">
+            <p class="m-0 text-white">Copyright by Datlt</p>
+        </footer>
+        `;
+    },
+};
 export default Footer;

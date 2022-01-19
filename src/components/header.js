@@ -1,36 +1,23 @@
 const Header = {
-  render() {
-    return /*html*/ `
-           
-            <div class="bg-[#272f54] py-4">
-              <a href="#"><img class="m-auto" src="https://picsum.photos/250/75" alt=""></a>
+    render() {
+        return /* html */ `
+        <header>
+            <div class="bg-blue-800 py-4">
+            <a href="">
+                <img src="https://picsum.photos/150/40" alt="" class="mx-auto">
+            </a>
             </div>
-            <div class="bg-[#cb7802] flex">
-              <ul class="w-100 flex">
-                <li><a href="/" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Home</a></li>
-                <li>
-
-                  <a href="/admin" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Admin</a>
-
-                  <!-- <div class="dropdown" style="position: relative; display: inline-block;">
-                    <a class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Admin</a>
-                    <div class="dropdown-content" style="display: none; position: absolute; background-color: #cb7802; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 12px 16px; z-index: 1; display: block;">
-                      <a href="/admin/dashboard" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Dashboard</a>
-                      <a href="/admin/news" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">News</a>
-                    </div>
-                  </div> -->
-
-                </li>
-                <li><a href="/signup" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signup</a></li>
-                <li><a href="/signin" class="block py-3 px-5 text-stone-50 text-base hover:text-blue-800">Signin</a></li>
-              </ul>
-              <div class="py-3 flex ml-80">
-                <input class="w-60" type="text">
-                <button class="bg-[#272f54] text-stone-50 text-sm w-20 ml-2 border">Search</button> 
-              </div>
+            <div class="bg-orange-500">
+            <ul class="flex">
+                <li><a href="/" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Home </a></li>
+                <li><a href="/about" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">About</a></li>
+                <li><a href="/product" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Product</a></li>
+                <li><a href="/contact" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
+                <li><a href="/admin/dashboard" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Dashboard</a></li>
+            </ul>
             </div>
-            
+        </header>
         `;
-  },
+    },
 };
 export default Header;
