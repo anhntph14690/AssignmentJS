@@ -1,4 +1,3 @@
-
 import { update } from '../../../api/posts';
 import { get } from '../../../api/posts';
 

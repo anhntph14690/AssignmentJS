@@ -1,6 +1,6 @@
 const Header = {
     render() {
-        return /* html */ `
+        return /*html*/ `
         <header>
             <div class="bg-blue-800 py-4">
             <a href="">
