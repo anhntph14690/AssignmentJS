@@ -4,7 +4,7 @@ import NavAdmin from "../../../components/NavAdmin";
 
 const AdminNewsAddPage = {
     render() {
-        return /*html*/`
+        return /* html */`
         <div class="min-h-full">
             ${NavAdmin.render()}
             <header class="bg-white shadow">

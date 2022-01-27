@@ -4,7 +4,7 @@ import { get } from '../../../api/posts';
 const AdminEditPost = {
     async render(id) {
         const { data } = await get(id);
-        return /*html*/`
+        return `
             <form id="form-edit-post">
                 <input type="text" value="${data.title}" id="title-post"/>
                 <button>Cap nhat</button>

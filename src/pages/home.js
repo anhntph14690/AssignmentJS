@@ -5,7 +5,7 @@ import NewsList from "../components/newsList";
 
 const HomePage = {
     async render() {
-        return /*html*/`
+        return /* html */`
             <div class="max-w-5xl mx-auto">
                 ${Header.render()}
                 <div class="banner">
