@@ -6,7 +6,7 @@ const NewsList = {
         // Chờ thằng axios.get truy cập API và lấy dữ liệu, 
         // lấy dữ liệu xong sẽ trả về và gán vào biến response
         const { data } = await getAll();
-        return /* html */`
+        return /*html*/`
             <h2 class="font-semibold text-2xl uppercase text-blue-800 my-4">Tin tức học tập</h2>
             <div class="grid grid-cols-3 gap-8">
                 ${data.map((post) => `
