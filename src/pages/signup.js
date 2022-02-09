@@ -2,7 +2,7 @@ import { signup } from "../api/user";
 
 const Signup = {
     async render() {
-        return `
+        return /*html*/`
             <form id="formSignup">
                 <input type="text" placeholder="Username" id="username"/>
                 <input type="email"  placeholder="Email" id="email"/>

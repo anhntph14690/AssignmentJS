@@ -117,5 +117,29 @@
     }
   ],
   "users": [
+    {
+      "email": "keninsta01@gmail.com",
+      "password": "$2a$10$OTVFVCKZCCFWdzAmh5mxxexYagEPBaw0v8nR06/MLgQi5nIzTvbkK",
+      "username": "datlt2306",
+      "id": 1
+    },
+    {
+      "email": "nguyentheanh14072002@gmail.com",
+      "password": "$2a$10$BbC658SlbLT9Pxos1Y/60uzpIqwlpmQcjHK9dLkYA623b83fsvwVm",
+      "username": "anhntph14690",
+      "id": 2
+    },
+    {
+      "email": "nguyentheanh@gmail.com",
+      "password": "$2a$10$3/HSBY9r2KP75Qkq8WQ1/ORXmk/DOdj8XkHNnOAfAS4uHMW9H3rtG",
+      "username": "anhnt",
+      "id": 3
+    },
+    {
+      "email": "anhntph14690@fpt.edu.vn",
+      "password": "$2a$10$GncvVlY8.dTAHC81OtYoFOV0A8DVqYrn4jJUhj9RVmIcObQwKMrva",
+      "username": "anh",
+      "id": 4
+    }
   ]
 }

@@ -19,5 +19,10 @@ const Header = {
         </header>
         `;
     },
+    afterRender() {
+        const email = document.querySelector("#email");
+        const logout = document.querySelector("#logout");
+
+    }
 };
 export default Header;
