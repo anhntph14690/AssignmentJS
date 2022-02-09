@@ -4,10 +4,10 @@ import { get } from '../../../api/posts';
 const AdminEditPost = {
     async render(id) {
         const { data } = await get(id);
-        return `
+        return /*html*/`
             <form id="form-edit-post">
                 <input type="text" value="${data.title}" id="title-post"/>
-                <button>Cap nhat</button>
+                <button>Sửa Đổi</button>
             </form>
         `
     },
@@ -17,6 +17,7 @@ const AdminEditPost = {
             e.preventDefault();
             update({
                 id, title: document.querySelector('#title-post').value,
+
             })
             .then((result) => console.log(result.data))
             .catch((error) => console.log(error))

@@ -1,24 +1,6 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "Annie Stroman1"
-    },
-    {
-      "createdAt": "2022-01-10T20:33:27.477Z",
-      "title": "Yolanda Roob",
-      "img": "http://placeimg.com/640/480/sports",
-      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
-      "id": "2"
-    },
-    {
-      "createdAt": "2022-01-10T04:45:32.422Z",
-      "title": "Ray Boyle",
-      "img": "http://placeimg.com/640/480/transport",
-      "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-      "id": "4"
-    },
-    {
       "createdAt": "2022-01-10T10:56:22.073Z",
       "title": "Jacqueline Hills",
       "img": "http://placeimg.com/640/480/fashion",
@@ -114,6 +96,12 @@
       "img": "https://res.cloudinary.com/ecommercer2021/image/upload/v1644324408/lkbpxqrhtjkom6jzwlar.jpg",
       "desc": "123",
       "id": "1wFGFId"
+    },
+    {
+      "title": "add",
+      "img": "https://res.cloudinary.com/ecommercer2021/image/upload/v1644425798/skfc5h1ja5rz65aol9ym.jpg",
+      "desc": "123",
+      "id": "n-7Mg4j"
     }
   ],
   "users": [
@@ -140,6 +128,24 @@
       "password": "$2a$10$GncvVlY8.dTAHC81OtYoFOV0A8DVqYrn4jJUhj9RVmIcObQwKMrva",
       "username": "anh",
       "id": 4
+    },
+    {
+      "email": "nguyentheanh2002@gmail.com",
+      "password": "$2a$10$MJlJSciBDBp/szqF512YEu9kjcs9dqPOpGeRxbNQ0buBa5QNdA4Ca",
+      "username": "ntashop",
+      "id": 5
+    },
+    {
+      "email": "nguyentheanh99@gmail.com",
+      "password": "$2a$10$pJjGqVbUjAyLq8zBYsNvMOKHVyrzCYCS7SNNo/UqRI9T7Atfmvv56",
+      "username": "anhnt",
+      "id": 6
+    },
+    {
+      "email": "nguyentheanh14690@gmail.com",
+      "password": "$2a$10$/zMiiXAn.nff2qDBnrEel.MwXpdCEFymd2wUiFN9bVIcMgS7m57Eq",
+      "username": "anh",
+      "id": 7
     }
   ]
 }

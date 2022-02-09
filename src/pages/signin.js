@@ -19,7 +19,7 @@ const Signin = {
                 email: document.querySelector("#email").value,
                 password: document.querySelector("#password").value,
             });
-            console.log(response);
+            localStorage.setItem('user', JSON.stringify(data.user))
         });
     },
 };

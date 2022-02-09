@@ -37,30 +37,30 @@ const AdminNewsPage = {
             </header>
             <main>
                 <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>STT</th>
-                        <th>Ảnh</th>
-                        <th>Tiêu đề</th>
-                        <th></th>
-                    </tr>
-                    <tbody>
-                        ${data.map((post, index) => `
+                    <table>
+                        <thead>
                             <tr>
-                                <td>${index + 1}</td>
-                                <td><img src="${post.img}" width="50"/></td>
-                                <td>${post.title}</td>
-                                <td>
-                                    <a href="/admin/news/${post.id}/edit">Edit</a>
-                                    <button data-id=${post.id} class="btn btn-remove">Remove</button>
-                                </td>
+                                <th>STT</th>
+                                <th>Ảnh</th>
+                                <th>Tiêu đề</th>
+                                <th></th>
                             </tr>
-                        `).join("")}
-                        
-                    </tbody>
-                    </thead>
-                </table>
+                            <tbody>
+                                ${data.map((post, index) => `
+                                    <tr>
+                                        <td>${index + 1}</td>
+                                        <td><img src="${post.img}" width="50"/></td>
+                                        <td>${post.title}</td>
+                                        <td>
+                                            <a href="/admin/news/${post.id}/edit">Edit</a>
+                                            <button data-id=${post.id} class="btn btn-remove">Remove</button>
+                                        </td>
+                                    </tr>
+                                `).join("")}
+                                
+                            </tbody>
+                        </thead>
+                    </table>
                 </div>
             </main>
         </div>
@@ -76,9 +76,12 @@ const AdminNewsPage = {
             // click vào button thì xóa phần tử trong mảng
             // dựa vào ID vừa lấy được
             button.addEventListener('click', () => {
-                const confirm = window.confirm("Mày có chắc chắn muốn xóa không?");
+                const confirm = window.confirm("Bạn có chắc chắn muốn xóa không?");
                 if(confirm){
-                    remove(id).then(() => console.log("Mày đã xóa thành công"));
+                    remove(id).them(() => {
+                        console.log("Bạn đã xoá thành công.")
+                        reRender(AdminNewsPage, "#app");
+                    });
                 }
             })
         });
