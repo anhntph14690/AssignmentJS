@@ -2,7 +2,7 @@ const Banner = {
     render() {
         return /*html*/`
             
-            <div class="header-blue">
+            <!-- <div class="header-blue">
                 <div class="container hero">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
@@ -18,7 +18,49 @@ const Banner = {
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="dm_banner">
+                <div class="danh_muc">
+                    <section class="tieude_muc">
+                        <h2>DANH MỤC</h2>
+                    </section>
+                    <br>
+                    <hr>
+                    <section class="box_muc">
+                            <section class="content_box_muc">
+                                <section class="text_muc">
+                                    <a id="text_name" href="">List</a>
+                                </section>
+                            </section>
+                            <section class="content_box_muc">
+                                <section class="text_muc">
+                                    <a id="text_name" href="">List</a>
+                                </section>
+                            </section>
+                            <section class="content_box_muc">
+                                <section class="text_muc">
+                                    <a id="text_name" href="">List</a>
+                                </section>
+                            </section>
+                            <section class="content_box_muc">
+                                <section class="text_muc">
+                                    <a id="text_name" href="">List</a>
+                                </section>
+                            </section>
+                    </section>
+                </div>
+                <div id="slider" class="slider">
+                <div class="slider-content">
+                    <div class="slider-content-wrapper">
+                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644512808/banner1_gta985.jpg" alt="" width="800px">
+                        
+                    </div>
+                </div>
             </div>
+            </div>
+
+            
             
        
                 

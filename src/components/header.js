@@ -1,6 +1,17 @@
 const Header = {
     render() {
         return /*html*/ `
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="./../Layout_css/header_index.css">
+            <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </head>
         <header>
             <!-- <div class="bg-blue-800 py-4">
             <a href="">
@@ -17,47 +28,69 @@ const Header = {
             </ul>
             </div> -->
 
-            <div class="header-blue">
-            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Assignment</a><button class="navbar-toggler"
-                        data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle
-                            navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav">
-                            <ul class="flex nav navbar-nav">
-                                <li><a href="/" class="nav-link active">Home </a></li>
-                                <li><a href="/about" class="nav-link active">About</a></li>
-                                <li><a href="/product" class="nav-link active">Product</a></li>
-                                <li><a href="/contact" class="nav-link active">Contact</a></li>
-                                <li><a href="/admin/dashboard" class="nav-link active">Dashboard</a></li>
-                            </ul>
-                        </ul>
-                        <form class="form-inline mr-auto" target="_self">
-                            <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input
-                                    class="form-control search-field" type="search" name="search" id="search-field">
+            <div class="container_header">
+                <div class="header_min">
+                    <div class="text_header_min">
+                        <h3 class="font-black">Poly Mac: Uy tín trong từng sản phẩm!</h3>
+                        <h3 class="font-black">Hotline: </h3>
+                        <a href="" title="Gọi ngay"><b>0923.239.468</b></a>
+                    </div>
+                    <div class="login">
+                            <div class="dn_dk">
+                                <button class="nut_dn" type="button"><a href="../login/login_sigup.php">Đăng nhập</a></button>
+                                <button class="nut_dk" type="button"><a href="../login/login_sigup.php">Đăng Kí</a></button>
                             </div>
-                        </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a
-                            class="btn btn-light action-button" role="button" href="#">Sign Up</a>
                     </div>
                 </div>
-            </nav>
-            <div class="container hero">
-                <div class="row">
-                    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1>The revolution is here.</h1>
-                        <p>Mauris egestas tellus non ex condimentum, ac ullamcorper sapien dictum. Nam consequat neque
-                            quis sapien viverra convallis. In non tempus lorem. </p><button
-                            class="btn btn-light btn-lg action-button" type="button">Learn More</button>
-                    </div>
-                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
-                        <div class="iphone-mockup"><img src="https://picsum.photos/5000/4000" class="device">
-                            <div class="screen"></div>
+                <div class="header_max">
+                    <a href="./../user/index.php">
+                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644507435/logo_white01_ebezxz.png" alt="" width="80px">
+                        
+                    </a>
+                    
+                    <menu>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="/" class="dropbtn">Home</a>
+                                <div class="dropdown-content">
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/about" class="dropbtn">About</a>
+                                <div class="dropdown-content">
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/product" class="dropbtn">Product</a>
+                                <div class="dropdown-content">
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/contact" class="dropbtn">Contact</a>
+                                <div class="dropdown-content">
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/admin/dashboard" class="dropbtn">Dashboard</a>
+                                <div class="dropdown-content">
+                                </div>
+                            </li>
+                        </ul>
+                    </menu>
+                    <div class="search_cart">
+                        <div class="search-container">
+                            <form action="../user/get_pt_by_search.php" method="POST">
+                                <input type="text" name="search" placeholder="Tìm kiếm..." class="search-input">
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
                         </div>
+                        
                     </div>
+
                 </div>
             </div>
-        </div>
             
             
         </header>
