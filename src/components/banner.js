@@ -1,16 +1,8 @@
 const Banner = {
     render() {
         return /*html*/`
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Untitled</title>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-
-            </head>
-            <div>
+            
+            <div class="header-blue">
                 <div class="container hero">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
@@ -27,6 +19,8 @@ const Banner = {
                     </div>
                 </div>
             </div>
+            
+       
                 
          `;
     },

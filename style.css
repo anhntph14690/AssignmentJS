@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .nen_body {
-  background:linear-gradient(135deg, #172a74, #21a9af);
+  background:linear-gradient(135deg, #2b5363, #1d1f2f);
   background-color:#184e8e;
 }
 .header-blue {

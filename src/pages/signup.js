@@ -22,7 +22,7 @@ const Signup = {
                 password: document.querySelector("#password").value,
             });
           window.location.href = "/#/";
-        // thông báo bạn đăng nhập thành công....
+        // thông báo bạn đăng nhập thành công....y
         });
     },
 };
