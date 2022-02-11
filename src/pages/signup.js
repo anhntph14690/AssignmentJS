@@ -7,7 +7,7 @@ const Signup = {
                 <input type="text" placeholder="Username" id="username"/>
                 <input type="email"  placeholder="Email" id="email"/>
                 <input type="password"  placeholder="Password" id="password"/>
-                <button>Đăng ký</button>
+                <button class="text-white">Đăng ký</button>
             </form>
         `;
     },

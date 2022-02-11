@@ -6,7 +6,7 @@ const Signin = {
             <form id="formSignin">
                 <input type="email"  placeholder="Email" id="email"/>
                 <input type="password"  placeholder="Password" id="password"/>
-                <button>Đăng nhập</button>
+                <button class="text-white">Đăng nhập</button>
             </form>
         `;
     },
@@ -14,12 +14,22 @@ const Signin = {
         const formSignin = document.querySelector("#formSignin");
         formSignin.addEventListener("submit", async (e) => {
             e.preventDefault();
-            // call api
-            const response = await signin({
-                email: document.querySelector("#email").value,
-                password: document.querySelector("#password").value,
-            });
-            localStorage.setItem('user', JSON.stringify(data.user))
+            try {
+                // call api
+                const { data } = await signin({
+                    email: document.querySelector("#email").value,
+                    password: document.querySelector("#password").value,
+                });
+                localStorage.setItem('user', JSON.stringify(data.user))
+                if (data.user.id == 1) {
+                    document.location.href = "/admin/news"
+                } else {
+                    document.location.href = "/"
+                }
+                } catch (error) {
+                    console.log(error.response.data)
+                }
+
         });
     },
 };

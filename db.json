@@ -128,24 +128,6 @@
       "password": "$2a$10$GncvVlY8.dTAHC81OtYoFOV0A8DVqYrn4jJUhj9RVmIcObQwKMrva",
       "username": "anh",
       "id": 4
-    },
-    {
-      "email": "nguyentheanh2002@gmail.com",
-      "password": "$2a$10$MJlJSciBDBp/szqF512YEu9kjcs9dqPOpGeRxbNQ0buBa5QNdA4Ca",
-      "username": "ntashop",
-      "id": 5
-    },
-    {
-      "email": "nguyentheanh99@gmail.com",
-      "password": "$2a$10$pJjGqVbUjAyLq8zBYsNvMOKHVyrzCYCS7SNNo/UqRI9T7Atfmvv56",
-      "username": "anhnt",
-      "id": 6
-    },
-    {
-      "email": "nguyentheanh14690@gmail.com",
-      "password": "$2a$10$/zMiiXAn.nff2qDBnrEel.MwXpdCEFymd2wUiFN9bVIcMgS7m57Eq",
-      "username": "anh",
-      "id": 7
     }
   ]
 }

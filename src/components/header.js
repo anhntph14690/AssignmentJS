@@ -37,8 +37,8 @@ const Header = {
                     </div>
                     <div class="login">
                             <div class="dn_dk">
-                                <button class="nut_dn" type="button"><a href="../login/login_sigup.php">Đăng nhập</a></button>
-                                <button class="nut_dk" type="button"><a href="../login/login_sigup.php">Đăng Kí</a></button>
+                                <button class="nut_dn" type="button"><a href="/signin">Đăng nhập</a></button>
+                                <button class="nut_dk" type="button"><a href="/signup">Đăng Kí</a></button>
                             </div>
                     </div>
                 </div>
