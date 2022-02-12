@@ -128,6 +128,12 @@
       "password": "$2a$10$GncvVlY8.dTAHC81OtYoFOV0A8DVqYrn4jJUhj9RVmIcObQwKMrva",
       "username": "anh",
       "id": 4
+    },
+    {
+      "email": "haianh1701@gmail.com",
+      "password": "$2a$10$Jj6Yi0mjWWQaauv7c5WN.uFv7OQuu4jLnsvxi8Kqmf5vq0aoM84Fa",
+      "username": "haianh",
+      "id": 5
     }
   ]
 }
