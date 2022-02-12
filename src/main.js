@@ -17,18 +17,21 @@ const print = async (content, id) => {
 };
 
 router.on("/admin/*", () => { }, {
-    before(done, match) {
-        if (JSON.parse(localStorage.getItem('user'))) {
-            const id = JSON.parse(localStorage.getItem('user')).id;
-            if (id == 1) {
+    // Phương thức before được gọi trước khi render nội dung ra trình duyệt
+    before: (done) => {
+        if (localStorage.getItem('user')) {
+            // lấy id trong localStorage
+            const userId = JSON.parse(localStorage.getItem('user')).id;
+            // Nếu userid == 1 thì render
+            if (userId === 1) {
                 done();
             } else {
+                // ngược lại nếu ko phải admin quay về trang chủ
                 document.location.href = "/"
             }
         } else {
             document.location.href = "/"
         }
-
 
     }
 })
