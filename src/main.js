@@ -1,5 +1,9 @@
 import Navigo from "navigo";
 import AboutPage from "./pages/about";
+import ProductPage from "./pages/product";
+import ContactPage from "./pages/contact";
+
+
 import DashboardPage from "./pages/admin/dashboard";
 import AdminNewsPage from "./pages/admin/news";
 import AdminNewsAddPage from "./pages/admin/news/add";
@@ -16,7 +20,7 @@ const print = async (content, id) => {
     if (content.afterRender) content.afterRender(id);
 };
 
-router.on("/admin/*", () => { }, {
+router.on("/admin/*", () => {}, {
     // Phương thức before được gọi trước khi render nội dung ra trình duyệt
     before: (done) => {
         if (localStorage.getItem('user')) {
@@ -39,6 +43,10 @@ router.on("/admin/*", () => { }, {
 router.on({
     "/": () => print(HomePage),
     "/about": () => print(AboutPage),
+    "/product": () => print(ProductPage),
+    "/contact": () => print(ContactPage),
+
+
     "/news/:id": (value) => print(DetailNewsPage, value.data.id),
     "/admin/dashboard": () => print(DashboardPage),
     "/admin/news": () => print(AdminNewsPage),

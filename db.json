@@ -104,17 +104,6 @@
       "id": "n-7Mg4j"
     }
   ],
-  "postCates": [
-    {
-      "id": 1,
-      "name": "danh mục bài viết 1"
-    },
-    {
-      "id": 2,
-      "name": "danh mục bài viết 2"
-    }
-  ],
-  "products": [],
   "users": [
     {
       "email": "keninsta01@gmail.com",
@@ -145,6 +134,18 @@
       "password": "$2a$10$Jj6Yi0mjWWQaauv7c5WN.uFv7OQuu4jLnsvxi8Kqmf5vq0aoM84Fa",
       "username": "haianh",
       "id": 5
+    },
+    {
+      "email": "nguyentheanh12002@gmail.com",
+      "password": "$2a$10$K85J.JhTLel7fSyhroPLnuUz6COBjxczhVJdCZFY7wfgOBwpHz.ku",
+      "username": "anhntph146",
+      "id": 6
+    },
+    {
+      "email": "nguyentheanh2002@gmail.com",
+      "password": "$2a$10$BGhi0uSiLm.bbR2.cKGW..pBa2Be1N1kwtDxqesO2fsjI0XL.e1x6",
+      "username": "anhntph146900",
+      "id": 7
     }
   ]
 }

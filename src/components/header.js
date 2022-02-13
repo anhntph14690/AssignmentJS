@@ -1,3 +1,4 @@
+import { reRender } from '../utils';
 const Header = {
     render() {
         return /*html*/ `
@@ -96,5 +97,22 @@ const Header = {
         </header>
         `;
     },
+
+    afteRender() {
+        const accountEmail = document.querySelector('#account-email');
+        if (accountEmail) {
+            accountEmail.innerHTML = JSON.parse(localStorage.getItem('user')).email;
+        }
+        const logout = document.querySelector('#logout');
+        if (logout) {
+            logout.addEventListener('click', function () {
+                localStorage.removeItem('user');
+                reRender(Header, '#header');
+            })
+        }
+
+    }
+
+
 };
 export default Header;
