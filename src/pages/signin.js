@@ -1,5 +1,6 @@
 import { signin, signup } from "../api/user";
-inpor
+import toastr from "toastr";
+import "toastr/build/toastr.min.css"
 
 const Signin = {
     async render() {

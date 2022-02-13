@@ -9,7 +9,7 @@ import HomePage from "./pages/home";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 
-const router = new Navigo("/", { linksSelector: "a" });
+const router = new Navigo("/", { linksSelector: "a", hash: true });
 
 const print = async (content, id) => {
     document.getElementById("app").innerHTML = await content.render(id);

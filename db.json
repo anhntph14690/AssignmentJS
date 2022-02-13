@@ -104,6 +104,17 @@
       "id": "n-7Mg4j"
     }
   ],
+  "postCates": [
+    {
+      "id": 1,
+      "name": "danh mục bài viết 1"
+    },
+    {
+      "id": 2,
+      "name": "danh mục bài viết 2"
+    }
+  ],
+  "products": [],
   "users": [
     {
       "email": "keninsta01@gmail.com",
