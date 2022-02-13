@@ -8,9 +8,9 @@ const NewsList = {
         const { data } = await getAll();
         return /*html*/`
             <h2 class="font-semibold text-2xl uppercase text-lime-500 my-4">Tin tức học tập</h2>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-3 gap-8 ">
                 ${data.map((post) => `
-                    <div class="border p-4">
+                    <div class=" p-4 rounded-3xl bg-[#ffffff1a]">
                         <a href="/news/${post.id}">
                             <img src="${post.img}" alt="" />
                         </a>
