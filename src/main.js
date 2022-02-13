@@ -1,17 +1,17 @@
 import Navigo from "navigo";
+import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ProductPage from "./pages/product";
 import ContactPage from "./pages/contact";
-
-
 import DashboardPage from "./pages/admin/dashboard";
+import Signin from "./pages/signin";
+import Signup from "./pages/signup";
+
 import AdminNewsPage from "./pages/admin/news";
 import AdminNewsAddPage from "./pages/admin/news/add";
 import AdminEditPost from "./pages/admin/news/edit";
 import DetailNewsPage from "./pages/detail";
-import HomePage from "./pages/home";
-import Signin from "./pages/signin";
-import Signup from "./pages/signup";
+
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 

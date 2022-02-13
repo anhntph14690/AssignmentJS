@@ -1,4 +1,4 @@
-import { reRender } from '../utils';
+import { reRender } from '../utils/rerender';
 const Header = {
     render() {
         return /*html*/ `
@@ -42,6 +42,14 @@ const Header = {
                                 <button class="nut_dk" type="button"><a href="/signup">Đăng Kí</a></button>
                             </div>
                     </div>
+                    
+                    ${localStorage.getItem('user') ? `
+                        <ul class="flex space-x-4 items-center pr-4">
+                        <li class="flex items-center">Xin chào <span id="account-email" class="block px-4 py-3 text-white"></span></li>
+                        <li id="logout" class="cursor-pointer">Logout</li>
+                    </ul>`: "" }
+
+
                 </div>
                 <div class="header_max">
                     <a href="./../user/index.php">
