@@ -19,10 +19,12 @@ const Footer = {
                 <div class="footer_right">
                     <menu id="menu">
                         <ul>
-                            <li><a href="./../user/index.php">Trang chủ</a></li>
-                            <li><a href="./../user/san_pham.php">Sản phẩm</a></li>
-                            <li><a href="./../user/tin_tuc.php">Tin Tức</a></li>
-                            <li><a href="./../user/gioi_thieu.php">Giới Thiệu</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/product">Product</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/admin/dashboard">Dashboard</a></li>
+
                         </ul>
                     </menu>
                     <map name="">
@@ -30,7 +32,7 @@ const Footer = {
                         width="500" height="300" 
                         style="border:0;
                         border-radius: 20px;
-                        margin: 40px 100px 0;" 
+                        margin: 40px 122px 0;" 
                         allowfullscreen="" loading="lazy"></iframe>
                     </map>
                 </div>
