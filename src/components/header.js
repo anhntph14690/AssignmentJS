@@ -3,15 +3,7 @@ const Header = {
     render() {
         return /*html*/ `
         <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-            <link rel="stylesheet" href="./../Layout_css/header_index.css">
             <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </head>
         <header>
             <!-- <div class="bg-blue-800 py-4">
