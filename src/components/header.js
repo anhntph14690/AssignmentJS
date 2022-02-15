@@ -42,17 +42,18 @@ const Header = {
                                 <button class="nut_dk" type="button"><a href="/signup">Đăng Kí</a></button>
                             </div>
                     </div>
-                    
-                    ${localStorage.getItem('user') ? `
-                        <ul class="flex space-x-4 items-center pr-4">
-                        <li class="flex items-center">Xin chào <span id="account-email" class="block px-4 py-3 text-white"></span></li>
-                        <li id="logout" class="cursor-pointer">Logout</li>
-                    </ul>`: "" }
-
 
                 </div>
-                <div class="header_max">
-                    <a href="./../user/index.php">
+                
+                    ${localStorage.getItem('user') ?  /*html*/`
+                        <ul class="flex space-x-4 items-center pr-4 float-right">
+                            <li class="flex items-center text-white text-base text-[#7ac142]">Hello!<span id="account-email" class="block px-3 py-3 text-white text-base"></span></li>
+                            <button id="logout" class="cursor-pointer w-24 h-8 rounded-2xl text-white border-double border-b-4 border-lime-500 bg-[#1d1f2f]">Logout</button>
+                        </ul>
+                    ` : ""}
+
+                <div class="header_max mt-12">
+                    <a href="/">
                         <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644507435/logo_white01_ebezxz.png" alt="" width="80px">
                         
                     </a>
@@ -106,10 +107,14 @@ const Header = {
         `;
     },
 
-    afteRender() {
+    afterRender() {
         const accountEmail = document.querySelector('#account-email');
+        console.log(accountEmail);
+
         if (accountEmail) {
             accountEmail.innerHTML = JSON.parse(localStorage.getItem('user')).email;
+
+
         }
         const logout = document.querySelector('#logout');
         if (logout) {

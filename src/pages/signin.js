@@ -53,7 +53,7 @@ const Signin = {
                 });
                 if (data) {
                     localStorage.setItem('user', JSON.stringify(data.user));
-                    toastr.success("Đăng nhập thành công");
+                    toastr.success("Đăng nhập thành công!");
                     setTimeout(() => {
                         if (data.user.id === 1) {
                             document.location.href = "/admin/news"
@@ -64,7 +64,9 @@ const Signin = {
                 }
 
             } catch (error) {
-                toastr.error(error.response.data);
+                // toastr.error(error.response.data);
+                toastr.error("Đăng nhập thất bại!");
+
             }
 
         })

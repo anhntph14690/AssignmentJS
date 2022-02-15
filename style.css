@@ -19,7 +19,7 @@
 .header_min{
     height: 40px;
     display: grid;
-    grid-template-columns: 1fr 375px;
+    grid-template-columns: 1fr 215px;
     color: rgb(255, 255, 255);
     
 }
@@ -95,12 +95,11 @@ li a .dropbtn {
     
   }
   
-
 /*--------------END MENU--------------*/
 .header_max{
     display: grid;
-    grid-template-columns: 1fr 600px 280px;
-    margin: 15px 0 0;
+    grid-template-columns: 1fr 600px 300px;
+    
 }
 
 .search_cart{
@@ -159,7 +158,7 @@ li a .dropbtn {
 }
 .login{
     margin-top: 10px;
-    width: 300px;
+    width: 250px;
 }
 .login a{
     text-decoration: none;
