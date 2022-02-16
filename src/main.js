@@ -28,7 +28,7 @@ router.on("/admin/*", () => {}, {
             // lấy id trong localStorage
             const userId = JSON.parse(localStorage.getItem('user')).id;
             // Nếu userid == 1 thì render
-            if (userId === 5) { //5 là id user đăng nhập
+            if (userId) { // userId === 5 là id user đăng nhập
                 done();
             } else {
                 // ngược lại nếu ko phải admin quay về trang chủ
