@@ -90,56 +90,48 @@
       "img": "http://placeimg.com/640/480/nightlife",
       "desc": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
       "id": "17"
+    }
+  ],
+  "products": [
+    {
+      "createdAt": "2022-01-10T14:22:10.945Z",
+      "name": "Product A",
+      "img": "http://placeimg.com/640/480/nightlife",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "id": "11",
+      "price": "100"
     },
     {
-      "title": "add",
-      "img": "https://res.cloudinary.com/ecommercer2021/image/upload/v1644324408/lkbpxqrhtjkom6jzwlar.jpg",
-      "desc": "123",
-      "id": "1wFGFId"
+      "createdAt": "2022-01-10T11:38:45.275Z",
+      "name": "Product B",
+      "img": "http://placeimg.com/640/480/food",
+      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "id": "12",
+      "price": "200"
     },
     {
-      "title": "add",
-      "img": "https://res.cloudinary.com/ecommercer2021/image/upload/v1644425798/skfc5h1ja5rz65aol9ym.jpg",
-      "desc": "123",
-      "id": "n-7Mg4j"
+      "createdAt": "2022-01-10T14:45:44.448Z",
+      "name": "Product C",
+      "img": "http://placeimg.com/640/480/city",
+      "desc": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "id": "13",
+      "price": "300"
+    },
+    {
+      "createdAt": "2022-01-10T06:52:23.902Z",
+      "name": "Product D",
+      "img": "http://placeimg.com/640/480/technics",
+      "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "id": "14",
+      "price": "400"
     }
   ],
   "users": [
-    {
-      "email": "keninsta01@gmail.com",
-      "password": "$2a$10$OTVFVCKZCCFWdzAmh5mxxexYagEPBaw0v8nR06/MLgQi5nIzTvbkK",
-      "username": "datlt2306",
-      "id": 1
-    },
-    {
-      "email": "nguyentheanh14072002@gmail.com",
-      "password": "$2a$10$BbC658SlbLT9Pxos1Y/60uzpIqwlpmQcjHK9dLkYA623b83fsvwVm",
-      "username": "anhntph14690",
-      "id": 2
-    },
-    {
-      "email": "nguyentheanh@gmail.com",
-      "password": "$2a$10$3/HSBY9r2KP75Qkq8WQ1/ORXmk/DOdj8XkHNnOAfAS4uHMW9H3rtG",
-      "username": "anhnt",
-      "id": 3
-    },
-    {
-      "email": "anhntph14690@fpt.edu.vn",
-      "password": "$2a$10$GncvVlY8.dTAHC81OtYoFOV0A8DVqYrn4jJUhj9RVmIcObQwKMrva",
-      "username": "anh",
-      "id": 4
-    },
     {
       "email": "haianh1701@gmail.com",
       "password": "$2a$10$Jj6Yi0mjWWQaauv7c5WN.uFv7OQuu4jLnsvxi8Kqmf5vq0aoM84Fa",
       "username": "haianh",
       "id": 5
-    },
-    {
-      "email": "nguyentheanh12002@gmail.com",
-      "password": "$2a$10$K85J.JhTLel7fSyhroPLnuUz6COBjxczhVJdCZFY7wfgOBwpHz.ku",
-      "username": "anhntph146",
-      "id": 6
     },
     {
       "email": "nguyentheanh2002@gmail.com",

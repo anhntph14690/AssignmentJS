@@ -63,7 +63,7 @@ const Header = {
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a href="/product" class="dropbtn">Product</a>
+                                <a href="/products" class="dropbtn">Product</a>
                                 <div class="dropdown-content">
                                 </div>
                             </li>
@@ -101,7 +101,6 @@ const Header = {
 
     afterRender() {
         const accountEmail = document.querySelector('#account-email');
-        console.log(accountEmail);
 
         if (accountEmail) {
             accountEmail.innerHTML = JSON.parse(localStorage.getItem('user')).email;
