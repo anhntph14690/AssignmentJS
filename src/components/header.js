@@ -4,6 +4,8 @@ const Header = {
         return /*html*/ `
         <head>
             <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </head>
         <header>
             <!-- <div class="bg-blue-800 py-4">
@@ -79,7 +81,7 @@ const Header = {
                             </li>
                         </ul>
                     </menu>
-                    <div class="search_cart">
+                    <div class="search_cart flex">
                         <div class="search-container">
                             <form action="../user/get_pt_by_search.php" method="POST">
                                 <input type="text" name="search" placeholder="Tìm kiếm..." class="search-input">
@@ -88,8 +90,12 @@ const Header = {
                                 </button>
                             </form>
                         </div>
+                        <div class="">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
                         
                     </div>
+                    
 
                 </div>
             </div>

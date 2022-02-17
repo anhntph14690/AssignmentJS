@@ -23,8 +23,8 @@ const CartPage = {
                 <tbody>
                     ${cart.map(item => `
                         <tr>
-                            <td>${item.name}</td>
-                            <td>${item.price}</td>
+                            <td class="text-white">${item.name}</td>
+                            <td class="text-white">${item.price}</td>
                             <td>
                                 <input type="number" value="${item.quantity}" class="border border-gray-500"/>
                                 <button data-id="${item.id}" class="bg-green-500 text-white btn btn-increase mr-2 px-2">Tăng</button>

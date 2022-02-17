@@ -7,10 +7,10 @@ const DetailProductPage = {
     async render(id) {
         const { data } = await get(id);
         return /*html*/`
-            <h1 class="text-2xl font-bold">${data.name}</h1>
+            <h1 class="text-2xl font-bold text-white">${data.name}</h1>
             <img src="${data.img}" />    
-            <p>${data.desc}</p>
-            <p>${data.price}</p>
+            <p class="text-white">${data.desc}</p>
+            <p class="text-white">${data.price}</p>
             <input type="number" id="inputValue" class="border border-black" value="1" />
             <button id="btnAddTocart" class="inline text-2xl bg-indigo-500 text-white">Thêm vào giỏ hàng</button>
         `
