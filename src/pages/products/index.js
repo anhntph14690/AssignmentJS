@@ -25,5 +25,8 @@ const ProductPage = {
 
         `
     },
+    afterRender() {
+        Header.afterRender()
+    }
 };
 export default ProductPage;

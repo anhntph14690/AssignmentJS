@@ -46,9 +46,9 @@ const Header = {
                         </ul>
                     ` : ""}
 
-                <div class="header_max mt-12">
+                <div class="header_max mt-12 max-w-6xl flex space-x-20">
                     <a href="/">
-                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644507435/logo_white01_ebezxz.png" alt="" width="80px">
+                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644507435/logo_white01_ebezxz.png" alt="" width="90px">
                         
                     </a>
                     
@@ -81,7 +81,7 @@ const Header = {
                             </li>
                         </ul>
                     </menu>
-                    <div class="search_cart flex">
+                    <div class="search_cart">
                         <div class="search-container">
                             <form action="../user/get_pt_by_search.php" method="POST">
                                 <input type="text" name="search" placeholder="Tìm kiếm..." class="search-input">
@@ -90,10 +90,11 @@ const Header = {
                                 </button>
                             </form>
                         </div>
-                        <div class="">
-                            <ion-icon name="cart-outline"></ion-icon>
-                        </div>
+                    
                         
+                    </div>
+                    <div class="w-5 text-white ml-60 text-7xl">
+                        <ion-icon name="cart-outline"></ion-icon>
                     </div>
                     
 

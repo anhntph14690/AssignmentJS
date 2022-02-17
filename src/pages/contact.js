@@ -3,7 +3,7 @@ import Header from "../components/header";
 
 const ContactPage = {
     render() {
-        return /* html */`
+        return /*html*/`
             <div class="max-w-6xl mx-auto">
                 ${Header.render()}
                 <h1 class="text-white">ContactPage</h1>
@@ -11,5 +11,8 @@ const ContactPage = {
             </div>
         `;
     },
+    afterRender() {
+        Header.afterRender()
+    }
 };
 export default ContactPage;

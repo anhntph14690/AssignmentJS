@@ -54,7 +54,7 @@
 
 /*---------------------END HEADER MIN----------------------------*/
 menu{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 menu ul li{
     display: inline-block;
@@ -96,17 +96,12 @@ li a .dropbtn {
   }
   
 /*--------------END MENU--------------*/
-.header_max{
-    display: grid;
-    grid-template-columns: 1fr 600px 300px;
-    
-}
 
 .search_cart{
     padding: 0;
     display: flex;
     align-items: left;
-    margin: 35px 0 0;
+    margin: 45px 0 0;
 
 }
 .search-container form{
@@ -115,6 +110,7 @@ li a .dropbtn {
     height: 35px;
     border-radius: 30px;
     padding: 0 10px;
+    display: flex;
     /* margin-top: -10px; */
     display: flex;
     justify-content: center;

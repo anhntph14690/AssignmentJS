@@ -11,5 +11,8 @@ const AboutPage = {
             </div>
         `;
     },
+    afterRender() {
+        Header.afterRender()
+    }
 };
 export default AboutPage;
