@@ -46,7 +46,7 @@ const Header = {
                         </ul>
                     ` : ""}
 
-                <div class="header_max mt-12 max-w-6xl flex space-x-20">
+                <div class="header_max mt-12 max-w-6xl flex space-x-16">
                     <a href="/">
                         <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644507435/logo_white01_ebezxz.png" alt="" width="90px">
                         
@@ -93,9 +93,9 @@ const Header = {
                     
                         
                     </div>
-                    <div class="w-5 text-white ml-60 text-7xl">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </div>
+                    <a href="/cart" class=" text-white ml-60 text-7xl mt-12 mr-12">
+                        <img class="w-8" src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1645384107/8664948-512_i1w6s3.png">
+                    </a>
                     
 
                 </div>
