@@ -36,32 +36,47 @@ const AdminNewsPage = {
                     </div>
                 </header>
                 <main>
-                    <div class=" mx-auto py-6 sm:px-6 lg:px-8">
-                        <table>
-                            <thead class="">
-                                <tr class="text-white">
-                                    <th>STT</th>
-                                    <th>Ảnh</th>
-                                    <th>Tiêu đề</th>
-                                    <th></th>
-                                </tr>
-                                <tbody>
-                                    ${data.map((post, index) => `
-                                        <tr>
-                                            <td class="text-white">${index + 1}</td>
-                                            <td class="text-white"><img src="${post.img}" width="50"/></td>
-                                            <td class="text-white">${post.title}</td>
-                                            <td>
-                                                <a href="/admin/news/${post.id}/edit">Edit</a>
-                                                <button data-id=${post.id} class="btn btn-remove text-white">Remove</button>
-                                            </td>
+
+                        <div class="mb-4">
+                            <!-- <div class="card-header text-white">
+                                <ion-icon name="chatbox-ellipsesv"></ion-icon>
+                               Quản lý 
+                                
+                            </div> -->
+                            <div class="card-body "> <!-- bg-[#ffffff0d] -->
+                                <table class="table table-striped custom-table">
+                                    <thead>
+                                        <tr class="text-white">
+                                            <th scope="col">STT</th>
+                                            <th scope="col">ẢNH</th>
+                                            <th scope="col">TIÊU ĐỀ</th>
+                                            <th scope="col">CHỨC NĂNG</th>
+
                                         </tr>
-                                    `).join("")}
-                                    
-                                </tbody>
-                            </thead>
-                        </table>
-                    </div>
+                                    </thead>
+                                    <tbody>
+                                        ${data.map((post, index) => `
+                                        
+                                            <tr scope="row" >
+                                                
+                                                <td class="text-white" >${index + 1}</td>
+                                                <td ><img src="${post.img}" class="border" width="50"/></td>
+                                                <td class="text-white" >${post.title}</td>
+                                                <td class="space-x-10">
+                                                    <a href="/admin/news/${post.id}/edit" class="text-lime-500 underline no-underline ">Edit</a>
+                                                    <button data-id=${post.id} class=" btn-remove text-red-600">Remove</button>
+                                                </td>
+                                                
+                                            </tr>
+                                        `).join("")}
+
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    
                 </main>
             </div>
         </div>
