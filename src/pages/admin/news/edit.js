@@ -1,7 +1,7 @@
-
 import NavAdmin from "../../../components/NavAdmin";
 import { update } from '../../../api/posts';
 import { get } from '../../../api/posts';
+// import axios from "axios";
 
 const AdminEditPost = {
     async render(id) {
@@ -14,13 +14,7 @@ const AdminEditPost = {
                 <div class="w-full">
                     <main>
 
-
-                        <!-- <form id="form-edit-post">
-                            <input type="text" value="${data.title}" id="title-post"/>
-                            <button>Sửa Đổi</button>
-                        </form> -->
-
-                        <div class=" max-w-xl card card-outline-secondary mb-20  mx-auto mt-20">
+                        <div class=" max-w-xl card card-outline-secondary mb-20  mx-auto mt-10">
                             <div class="card-body">
                                 <h3 class="text-center">Sửa Bài Viết</h3>
                                 <hr>
@@ -62,6 +56,9 @@ const AdminEditPost = {
                                         </div>
                                     </div>
                                 </form>
+
+                
+            
                             </div>
                                 
                         </div>
@@ -69,15 +66,11 @@ const AdminEditPost = {
                 </div>
             </div>
 
-
-
-
-
-
-        `
+        `;
     },
     afterRender(id){
         const formEdit = document.querySelector('#form-edit-post');
+
         formEdit.addEventListener('submit', (e) => {
             e.preventDefault();
             update({
@@ -86,7 +79,7 @@ const AdminEditPost = {
             })
             .then((result) => console.log(result.data))
             .catch((error) => console.log(error))
-        })
-    }
+        });
+    },
 };
 export default AdminEditPost;

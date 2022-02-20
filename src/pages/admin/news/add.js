@@ -1,6 +1,8 @@
 import axios from "axios";
 import { add } from "../../../api/posts";
 import NavAdmin from "../../../components/NavAdmin";
+// import $ from 'jquery';
+// import validate from 'jquery-validation';
 
 const AdminNewsAddPage = {
     render() {
@@ -13,7 +15,7 @@ const AdminNewsAddPage = {
                 
                 <main>
 
-                    <div class=" max-w-xl card card-outline-secondary mb-20  mx-auto mt-20">
+                    <div class=" max-w-xl card card-outline-secondary mb-20  mx-auto mt-10">
                         <div class="card-body">
                             <h3 class="text-center">Thêm Bài Viết</h3>
                             <hr>

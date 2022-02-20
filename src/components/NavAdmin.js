@@ -6,7 +6,7 @@ const NavAdmin = {
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
       </head>
 
-      <div id="menu_layout" class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-[#ffffff1a]" style="width: 250px;">
+    <div class=" sticky top-0 d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-[#ffffff1a]" style="width: 250px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <svg class="bi me-2" width="40" height="32"> </svg>
             <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644767257/logo_white02_zocquw.png" alt="" width="100px" height="100px">
