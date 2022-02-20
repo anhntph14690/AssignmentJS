@@ -1,7 +1,7 @@
-import { getAll, remove } from "../../../api/posts";
+import { getAll, remove } from "../../../api/products";
 import NavAdmin from "../../../components/NavAdmin";
 
-const AdminNewsPage = {
+const AdminProductPage = {
     async render() {
         const { data } = await getAll();
         return /*html*/`
@@ -15,11 +15,11 @@ const AdminNewsPage = {
                         <div class="lg:flex lg:items-center lg:justify-between">
                         <div class="flex-1 min-w-0">
                             <h2 class="text-2xl font-bold leading-7 text-[#7ac142] sm:text-3xl sm:truncate">
-                            Quản lý bài viết
+                            Quản lý sản phẩm
                             </h2>
                         </div>
                         <div class="mt-5 flex lg:mt-0 lg:ml-4">
-                            <a href="/admin/news/add" class="sm:ml-3 underline no-underline">
+                            <a href="/admin/products/add" class="sm:ml-3 underline no-underline">
                                 <button
                                     type="button"
                                     class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#7ac142] hover:bg-[#639b37] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -49,22 +49,24 @@ const AdminNewsPage = {
                                         <tr class="text-white">
                                             <th scope="col">STT</th>
                                             <th scope="col">ẢNH</th>
-                                            <th scope="col">TIÊU ĐỀ</th>
+                                            <th scope="col">TÊN</th>
+                                            <th scope="col">GIÁ</th>
                                             <th scope="col">CHỨC NĂNG</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        ${data.map((post, index) => `
+                                        ${data.map((products, index) => `
                                         
                                             <tr scope="row" >
                                                 
                                                 <td class="text-white" >${index + 1}</td>
-                                                <td ><img src="${post.img}" class="border" width="50"/></td>
-                                                <td class="text-white" >${post.title}</td>
+                                                <td ><img src="${products.img}" class="border" width="50"/></td>
+                                                <td class="text-white" >${products.name}</td>
+                                                <td class="text-white" >${products.price}$</td>
                                                 <td class="space-x-10">
-                                                    <a href="/admin/news/${post.id}/edit" class="text-lime-500 underline no-underline ">Edit</a>
-                                                    <button data-id=${post.id} class="btn btn-remove mt-3"><p class="text-red-600">Remove</p></button>
+                                                    <a href="/admin/products/${products.id}/edit" class="text-lime-500 underline no-underline ">Edit</a>
+                                                    <button data-id=${products.id} class="btn btn-remove mt-3"><p class="text-red-600">Remove</p></button>
                                                 </td>
                                                 
                                             </tr>
@@ -83,7 +85,7 @@ const AdminNewsPage = {
 
         `;
     },
-    afterRender(){
+    afterRender() {
         // lấy toàn bộ danh sách button có class là .btn
         const buttons = document.querySelectorAll('.btn');
         // tạo vòng lặp để lấy ra từng button
@@ -94,14 +96,14 @@ const AdminNewsPage = {
             // dựa vào ID vừa lấy được
             button.addEventListener('click', () => {
                 const confirm = window.confirm("Bạn có chắc chắn muốn xóa không?");
-                if(confirm){
+                if (confirm) {
                     remove(id).them(() => {
                         console.log("Bạn đã xoá thành công.")
-                        reRender(AdminNewsPage, "#app");
+                        reRender(AdminProductPage, "#app");
                     });
                 }
             })
         });
     }
 };
-export default AdminNewsPage;
+export default AdminProductPage;

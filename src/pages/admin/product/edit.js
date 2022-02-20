@@ -1,9 +1,9 @@
 import NavAdmin from "../../../components/NavAdmin";
-import { update } from '../../../api/posts';
-import { get } from '../../../api/posts';
+import { update } from '../../../api/products';
+import { get } from '../../../api/products';
 // import axios from "axios";
 
-const AdminEditPost = {
+const AdminEditProduct = {
     async render(id) {
         const { data } = await get(id);
         return /*html*/`
@@ -16,33 +16,38 @@ const AdminEditPost = {
 
                         <div class=" max-w-xl card card-outline-secondary mb-20  mx-auto mt-10">
                             <div class="card-body">
-                                <h3 class="text-center">Sửa Bài Viết</h3>
+                                <h3 class="text-center">Sửa Sản Phẩm</h3>
                                 <hr>
                                 <div class="alert alert-info p-2 pb-3">
                                     ĐỪNG ĐỂ TRỐNG NHÉ!
                                 </div>
-                                <form class="form" id="form-edit-post">
+                                <form class="form" id="form-edit-products">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input type="text" class="form-control" value="${data.title}" id="title-post">
+                                        <input type="text" class="form-control" value="${data.name}" id="name-products">
                                     </div>
                                     <br>
                                     <div class="form-group">
                                         <label>Photo</label>
-                                        <input type="file" class="form-control" value="${data.img}" id="img-post">
+                                        <input type="file" class="form-control" value="${data.img}" id="img-products">
                                     </div>
                                     <div class="form-group">
                                         <label>Desc</label>
                                         <input name=""
-                                        id="desc-post" 
+                                        id="desc-products" 
                                         value="${data.desc}"
+                                        cols="0" 
+                                        rows="8" 
                                         class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Price</label>
+                                        <input type="text" class="form-control" value="${data.price}" id="price-products">
                                     </div>
                                     
                                     <hr>
                                     <div class="flex mx-auto">
-
-                                        <a href="/admin/news">
+                                        <a href="/admin/products">
                                             <button type="button" class="btn btn-success btn-lg btn-block">Back</button>
                                         </a>
                                         <div class="col-md-6">
@@ -65,22 +70,23 @@ const AdminEditPost = {
 
         `;
     },
-    afterRender(id){
-        const formEdit = document.querySelector('#form-edit-post');
+    afterRender(id) {
+        const formEdit = document.querySelector('#form-edit-products');
 
         formEdit.addEventListener('submit', (e) => {
             e.preventDefault();
             update({
-                id, title: document.querySelector('#title-post').value,
-                // img: document.data.querySelector('#title-post').value,
-                desc: document.querySelector('#desc-post').value,
+                id, name: document.querySelector('#name-products').value,
 
-                
+                desc: document.querySelector('#desc-products').value,
+                price: document.querySelector('#price-products').value,
+
+
 
             })
-            .then((result) => console.log(result.data))
-            .catch((error) => console.log(error))
+                .then((result) => console.log(result.data))
+                .catch((error) => console.log(error))
         });
     },
 };
-export default AdminEditPost;
+export default AdminEditProduct;

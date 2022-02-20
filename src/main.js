@@ -2,6 +2,9 @@ import Navigo from "navigo";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ProductPage from "./pages/products";
+import AminProductPage from "./pages/admin/product";
+import AdminProductAddPage from "./pages/admin/product/add";
+import AdminEditProduct from "./pages/admin/product/edit";
 import DetailProductsPage from "./pages/products/detail";
 import ContactPage from "./pages/contact";
 import DashboardPage from "./pages/admin/dashboard";
@@ -48,6 +51,9 @@ router.on({
 
     //product
     "/products": () => print(ProductPage),
+    "/admin/products": () => print(AminProductPage),
+    "/admin/products/add": () => print(AdminProductAddPage),
+    "/admin/products/:id/edit": ({ data }) => print(AdminEditProduct, data.id),
     "/products/:id": (value) => print(DetailProductsPage, value.data.id),
 
     //new
