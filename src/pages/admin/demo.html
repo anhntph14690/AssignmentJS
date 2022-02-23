@@ -1,0 +1,53 @@
+<div class="container">
+    <section class="dangnhap">
+        <h4>ĐĂNG NHẬP</h4>
+    </section>
+    <form method="GET" onsubmit="return check()">
+        <div class="content">
+            <p>Tên đăng nhập</p>
+            <input type="text" id="tdnn">
+            <span id="thongbao1"></span>
+        </div>
+        <div class="content">
+            <p>Mật khẩu</p>
+            <input type="password" id="passs">
+            <span id="thongbao2"></span>
+        </div>
+        <button >ĐĂNG NHẬP</button>
+    </form>
+</div>
+<script>
+    function check() {
+        var kiemtra = 0;
+        var tdn = document.getElementById("tdnn");
+        var pass = document.getElementById("passs");
+
+        if (tdn.value.length < 10 || tdn.value.length > 11) {
+            tdn.style.border = "1px solid red"
+            thongbao1.innerText = "Nhập lại"
+            thongbao1.style.color = "red"
+            kiemtra++
+        } else {
+            tdn.style.border = "1px solid black"
+            thongbao1.innerText = "Nhập thành công"
+            thongbao1.style.color = "green"
+        }
+        if (pass.value.length < 6) {
+            pass.style.border = "1px solid red"
+            thongbao2.innerText = "Nhập lại"
+            thongbao2.style.color = "red"
+            kiemtra++
+        } else {
+            pass.style.border = "1px solid black"
+            thongbao2.innerText = "Nhập thành công"
+            thongbao2.style.color = "green"
+        }
+        if (kiemtra == 0) {
+            alert("Thành công");
+            return true;
+        } else {
+            alert("Đừng bỏ trống nhé!");
+            return false;
+        }
+    }
+</script>

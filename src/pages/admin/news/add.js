@@ -2,7 +2,7 @@ import axios from "axios";
 import { add } from "../../../api/posts";
 import NavAdmin from "../../../components/NavAdmin";
 // import $ from 'jquery';
-// import validate from 'jquery-validation';
+// import validate from 'validate';
 
 const AdminNewsAddPage = {
     render() {
@@ -41,7 +41,6 @@ const AdminNewsAddPage = {
                                     class="form-control"
                                     placeholder="Desc"></textarea>
                                 </div>
-                                
                                 <hr>
                                 <div class="flex mx-auto">
 
@@ -52,7 +51,7 @@ const AdminNewsAddPage = {
                                         <button type="reset" class="btn-default text-2xl btn-block mt-4 ml-44 text-rose-500">Reset</button>
                                     </div>
                                     <div class="col-md-6">
-                                        <button class="btn btn-success btn-lg btn-block mt-2.5 ml-32">Add</button>
+                                        <button  class="btn btn-success btn-lg btn-block mt-2.5 ml-32">Add</button>
                                     </div>
                                 </div>
                             </form>
@@ -95,5 +94,7 @@ const AdminNewsAddPage = {
             });
         });
     },
+
+    
 };
 export default AdminNewsAddPage;
