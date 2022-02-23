@@ -56,20 +56,27 @@ const Banner = {
                     </section>
                 </div>
                 <div id="slider" class="slider">
-                <div class="slider-content">
-                    <div class="slider-content-wrapper">
-                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644512808/banner1_gta985.jpg" alt="" width="1000px">
-                        
+                    <div class="slider-content">
+                        <div class="slider-content-wrapper">
+                            <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1644512808/banner1_gta985.jpg" alt="" width="1000px">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
 
+
+            
             
             
        
                 
          `;
     },
+
+    
+
+
+
 };
 export default Banner;

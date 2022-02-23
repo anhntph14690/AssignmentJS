@@ -38,6 +38,7 @@ const CartPage = {
                     
                 </tbody>
             </table>
+            
         `
     },
     afterRender() {
