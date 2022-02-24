@@ -16,6 +16,18 @@
             "dest": "/"
         },
         {
+            "src": "/admin/products",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/products/add",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/products/(.*)/edit",
+            "dest": "/"
+        },
+        {
             "src": "/products/(.*)",
             "dest": "/"
         },
