@@ -52,6 +52,7 @@ const AdminNewsPage = {
                                             <th scope="col">TIÊU ĐỀ</th>
                                             <th scope="col">CHỨC NĂNG</th>
 
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
