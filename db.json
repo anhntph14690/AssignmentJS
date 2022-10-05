@@ -107,6 +107,24 @@
       "password": "$2a$10$BGhi0uSiLm.bbR2.cKGW..pBa2Be1N1kwtDxqesO2fsjI0XL.e1x6",
       "username": "anhntph146900",
       "id": 2
+    },
+    {
+      "email": "nguyentheanh14072002@gmail.com",
+      "password": "$2a$10$iCGjhmYqoHrOWhzntid8beApWQYbVoYhgHZfftyujlka7QHFlTuMC",
+      "username": "Nguyễn",
+      "id": 3
+    },
+    {
+      "email": "anhntph14690@fpt.edu.vn",
+      "password": "$2a$10$JhL64p1TlKedHRb4NxwkHuECoBgXQwYRDY5NDUzGEXytV4RFm9CLS",
+      "username": "Nguyễn",
+      "id": 4
+    },
+    {
+      "email": "nguyentheanh1407202@gmail.com",
+      "password": "$2a$10$TdK778hETKVEUjH0DanLj.bjHI4mSB1P6V54jmOlwDRIGChsNHmu.",
+      "username": "Nguyễn",
+      "id": 5
     }
   ]
 }

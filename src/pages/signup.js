@@ -52,8 +52,29 @@ const Signup = {
                 email: document.querySelector('#email').value,
                 password: document.querySelector('#password').value
             });
-            window.location.href = "/#/";
+            // window.location.href = "/#/";
             // thông báo bạn đăng nhập thành công....
+
+            try {
+                // call api
+
+                if (data) {
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    toastr.success("Đăng nhập thành công!");
+                    setTimeout(() => {
+                        if (data.user.id === 1) {
+                            document.location.href = "/admin/news"
+                        } else {
+                            document.location.href = "/"
+                        }
+                    }, 2000);
+                }
+
+            } catch (error) {
+                // toastr.error(error.response.data);
+                toastr.error("Đăng nhập thất bại!");
+
+            }
         });
     }
 
